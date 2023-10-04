@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Puntaje de Crédito</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Puntaje de Crédito</h1>
+        <form method="POST">
+            <!-- Estilos para etiquetas y campos de entrada -->
+            <div class="form-group">
+                <label for="person_income">Ingreso de la Persona:</label>
+                <input type="number" name="person_income" required min="0">
+            </div>
+
+            <div class="form-group">
+                <label for="person_home_ownership">Propietario de la Casa:</label>
+                <select name="person_home_ownership" required>
+                    <option value="MORTGAGE">MORTGAGE</option>
+                    <option value="RENT">RENT</option>
+                    <option value="OWN">OWN</option>
+                    <option value="OTHER">OTHER</option>
+                </select><br>
+            </div>
+
+            <div class="form-group">
+                <label for="person_emp_length">Experiencia Laboral (años):</label>
+                <input type="text" name="person_emp_length" required min="0"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="loan_intent">Propósito del Préstamo:</label>
+                <select name="loan_intent" required>
+                    <option value="EDUCATION">EDUCATION</option>
+                    <option value="DEBTCONSOLIDATION">DEBTCONSOLIDATION</option>
+                    <option value="PERSONAL">PERSONAL</option>
+                    <option value="MEDICAL">MEDICAL</option>
+                    <option value="VENTURE">VENTURE</option>
+                    <option value="HOMEIMPROVEMENT">HOMEIMPROVEMENT</option>
+                </select><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="loan_grade">Grado del Préstamo:</label>
+                <select name="loan_grade" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="G">G</option>
+                </select><br>
+            </div>
+
+            <div class="form-group">
+                <label for="loan_amnt">Monto del Préstamo:</label>
+                <input type="text" name="loan_amnt" required min="1"><br>
+            </div>
+
+            <div class="form-group">
+                <label for="loan_int_rate">Tasa de Interés del Préstamo:</label>
+                <input type="text" name="loan_int_rate" required min="0.001"><br>
+            </div>
+            
+            <div class="form-group">
+                <label for="cb_person_default_on_file">Historial de Incumplimiento:</label>
+                <select name="cb_person_default_on_file" required>
+                    <option value="N">No</option>
+                    <option value="Y">Sí</option>
+                </select><br>
+            </div>
+
+            <!-- Agrega estilos similares para otros campos -->
+            
+            <div class="form-group">
+                <button type="submit" class="btn">Calcular Puntaje</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
