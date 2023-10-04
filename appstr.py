@@ -1,10 +1,13 @@
 import streamlit as st
 import pickle
 import pandas as pd
+import optbinning
+
+scorecard_model = pd.read_pickle("modelo_scorecard2.pkl")
 
 # Cargar el modelo de scorecard previamente entrenado
-with open('modelo_scorecard2.pkl', 'rb') as modelo_pkl:
-    scorecard_model = pickle.load(modelo_pkl)
+#with open('modelo_scorecard2.pkl', 'rb') as modelo_pkl:
+#    scorecard_model = pickle.load(modelo_pkl)
 
 def main():
     st.title("Aplicación de Scorecard")
