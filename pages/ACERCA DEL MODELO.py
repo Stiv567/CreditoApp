@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.markdown("# Reporte técnico: Modelo de riesgo de crédito")
-st.sidebar.markdown("# ABOUT MODEL: REPORTE TECNICO")
+st.sidebar.markdown("# ACERCA DEL MODELO: REPORTE TECNICO")
 
 st.header('Definición del problema')
 multi = '''La base de datos Credit Risk Dataset (Tse, n.d.) muestra un caso donde se simula la
@@ -155,9 +155,8 @@ st.markdown(
 # Contenido del footer
 footer_content = """
 <div class="footer">
-    Tu Texto Aquí | 
-    <a href="https://www.ejemplo.com" target="_blank">Enlace a tu sitio web</a> | 
-    <a href="https://www.otroejemplo.com" target="_blank">Otro enlace</a>
+    Puedes ver el informe completo aquí: | 
+    <a href="https://deepnote.com/publish/Score-Crediticio-Grupo-7-c3e73745-4797-4eab-9e9e-84b64802ff8e" target="_blank">red[Reporte tecnico en Deepnote]</a> 
 </div>
 """
 
