@@ -22,11 +22,16 @@ loan_intent
 - Histórico de incumplimiento (sí o no): cb_person_default_on_file
 - :blue[Duración de historial crediticio (años): cb_person_cred_hist_length]
 
-Sin embargo, la base de datos muestra valores no adecuados o incoherentes entre sí, y bajo el contexto en que están siendo analizados. Es por ello que se busca realizar un modelo de riesgo crediticio basado en los datos presentados, y con él, poder tomar decisiones dentro del buró de crédito que se está manejando. Para ello, es necesario filtrar adecuadamente las variables, los datos y poder realizar un análisis adecuado de estos.
+Sin embargo, la base de datos muestra valores no adecuados o incoherentes entre sí, y bajo el contexto en que están siendo analizados. 
+Es por ello que se busca realizar un modelo de riesgo crediticio basado en los datos presentados, y con él, poder tomar decisiones dentro del buró de crédito que se está manejando. 
+Para ello, es necesario filtrar adecuadamente las variables, los datos y poder realizar un análisis adecuado de estos.
 
-El score crediticio que se quiere generar se hará a partir únicamente de variables de la persona. Es decir, la edad, los ingresos, la cantidad de años desde que inicio con su historial crediticio, entre otros.
+El score crediticio que se quiere generar se hará a partir únicamente de variables de la persona. 
+Es decir, la edad, los ingresos, la cantidad de años desde que inicio con su historial crediticio, entre otros.
 
-Como se desea conocer cual es la probabilidad de que la persona que ingresa sus datos incumpla con algún crédito que se le otorgue se define como variable objetivo el estado del préstamo la cual aparece en naranja. En negrita están todas aquellas variables que NO se consideran en este problema.'''
+Como se desea conocer cual es la probabilidad de que la persona que ingresa sus datos incumpla con algún crédito que se le otorgue 
+se define como variable objetivo el estado del préstamo la cual aparece en naranja. En negrita están todas aquellas variables que NO se consideran en este problema.'''
+
 st.markdown(multi)
 
 st.header('Metodología')
