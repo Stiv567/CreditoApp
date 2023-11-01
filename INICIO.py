@@ -1,21 +1,32 @@
 import streamlit as st
 
 def main():
+    # Increase text size and apply attributes using HTML and CSS
     st.markdown(
         """
         <style>
-        .big-text {
-            font-size: 36px;
+        .formatted-text {
+            font-size: 24px;
             color: orange;
-            padding: 5px;
+        }
+        .dash {
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+        .core {
+            font-size: 24px;
+            color: green;
+            font-weight: bold;
         }
         </style>
         """,
         unsafe_allow_html=True
     )
     
-    # Apply the CSS class to text and specify the text content
-    st.sidebar.markdown("<p class='big-text'>C - $CORE</p>", unsafe_allow_html=True)
+    # Apply the CSS classes to the text content
+    st.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
+
     
     st.markdown("# :orange[C]- :green[$CORE]")
 
