@@ -2,7 +2,7 @@ import streamlit as st
 
 def main():
     st.markdown("# :orange[C]- :green[$CORE]")
-    st.sidebar.title("#:orange[C]- :green[$CORE]")
+    st.sidebar.title(":orange[C]- :green[$CORE]")
     with st.container():
         st.title("¿Que es el puntaje crediticio?")
         multi = '''Un puntaje crediticio es como una "nota" que refleja tu responsabilidad financiera. Imagina que es tu "boleta de confianza" en el mundo financiero.Las instituciones financieras la utilizan para saber si puedes pagar tus préstamos a tiempo.''',
