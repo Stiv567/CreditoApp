@@ -17,6 +17,7 @@ home_ownership_labels = {
 scorecard_model = pd.read_pickle("modelo_scorecard4.pkl")
 
 def score():
+    st.markdown("# :orange[C]- :green[$CORE]")
     st.markdown("# CREDIT SCORE")
     st.sidebar.title("# :orange[C]- :green[$CORE]")
     with st.container():
