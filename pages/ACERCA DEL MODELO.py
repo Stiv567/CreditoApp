@@ -34,15 +34,19 @@ se define como variable objetivo el estado del préstamo la cual aparece en nara
 
 st.markdown(multi)
 
-st.header('Metodología')
+st.header('Hipótesis')
 
-multi_2 = '''Para el desarrollo del análisis, se utilizan los datos suministrados por Tse (n.d.), de la
-plataforma de ciencia de datos, Kaggle. La base de datos utiliza las variables descritas
-anteriormente.
-Para el análisis y manejo de los datos, se utiliza Python como lenguaje de programación que
-permite desarrollar lo propuesto.
-De igual manera, se trabaja en un scorecard, el cual será utilizado para mostrar el modelo
-propuesto, mediante una página web.'''
+multi_2 = '''
+- Edad (años): Se espera que el score se reduzca a medida que aumenta la edad.
+- Ingreso anual (USD$): El score aumenta a medida que aumentan los ingresos anuales.
+- Tipo de vivienda (renta, hipoteca, propia u otra): Si la vivienda es propia o esta en hipoteca indica una situación de estabilidad financiera, 
+por lo que el score tendería a aumentar según estas dos entradas. Por otro lado, si la vivienda es rentada 
+o cualquiera sea la situación (otra), el score no se vería tan afectado.
+- Duración de empleo (años): Se espera que con mas años en el mundo laboral el score también aumente.
+- Experiencia laboral (años):  El score presentara un aumento a medida que la experiencia laboral lo hace.
+- Duración de historial crediticio (años): Al igual que la duración del empleo, el score aumentara a medida que esta variable aumenta aunque 
+no en la misma magnitud que en el caso de la duración del empleo.
+'''
 
 st.markdown(multi_2)
 
