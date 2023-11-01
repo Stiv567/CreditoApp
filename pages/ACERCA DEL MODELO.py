@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+st.markdown("# :orange[C]- :green[$CORE]")
 st.markdown("# Reporte técnico: Modelo de riesgo de crédito")
 st.sidebar.title("# :orange[C]- :green[$CORE]")
 
