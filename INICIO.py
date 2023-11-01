@@ -7,7 +7,6 @@ def main():
         .big-text {
             font-size: 36px;
             color: orange;
-            background-color: green;
             padding: 5px;
         }
         </style>
