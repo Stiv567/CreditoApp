@@ -8,19 +8,19 @@ st.header('Definición del problema')
 multi = '''La base de datos Credit Risk Dataset (Tse, n.d.) muestra un caso donde se simula la
 participación de personas dentro del buró de crédito.
 Dicha base de datos contiene la siguiente información recolectada, separada en columnas:
-- Edad (años): person_age
-- Ingreso anual ($): person_income
-- Tipo de vivienda (renta, hipoteca, propia u otra): person_home_ownership
-- Duración de empleo (años): person_emp_length
+- **Edad (años): person_age**
+- **Ingreso anual ($): person_income**
+- **Tipo de vivienda (renta, hipoteca, propia u otra): person_home_ownership**
+- **Duración de empleo (años): person_emp_length**
 - Intención de préstamo (educativa, médica, empresarial, personal o consolidada):
 loan_intent
 - Grado de préstamo (A, B, C, D o E): loan_grade
 - Cantidad de préstamo ($): loan_amnt
 - Interés (%): loan_int_rate
-- Estado del préstamo (no incumplido o incumplido): loan_status
+- :orange[Estado del préstamo (no incumplido o incumplido): loan_status]
 - Porcentaje de ingreso (%): loan_percent_income
 - Histórico de incumplimiento (sí o no): cb_person_default_on_file
-- Duración de historial crediticio (años): cb_person_cred_hist_length
+- **Duración de historial crediticio (años): cb_person_cred_hist_length**
 
 Sin embargo, la base de datos muestra valores no adecuados o incoherentes entre sí, y bajo el
 contexto en que están siendo analizados. Es por ello que se busca realizar un modelo de
