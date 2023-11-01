@@ -16,6 +16,9 @@ def main():
     
     # Apply the CSS class to text and specify the text content
     st.sidebar.markdown("<p class='big-text'>C - $CORE</p>", unsafe_allow_html=True)
+    
+    st.markdown("# :orange[C]- :green[$CORE]")
+
 
     
     #st.sidebar.title(":orange[C]- :green[$CORE]")
