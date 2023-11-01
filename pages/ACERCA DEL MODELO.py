@@ -116,7 +116,7 @@ st.markdown(
             unsafe_allow_html=True
             )
 
-st.caption('Para ver el reporte técnico completo en Deepnote haz clic en red[Reporte técnico]')
+st.caption('Para ver el reporte técnico completo en Deepnote haz clic en :red[Reporte técnico]')
 st.link_button("Reporte técnico","https://deepnote.com/publish/Score-Crediticio-Grupo-7-c3e73745-4797-4eab-9e9e-84b64802ff8e")
 
 st.markdown('<div class="custom-space"></div>', unsafe_allow_html=True)
