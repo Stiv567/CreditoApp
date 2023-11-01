@@ -1,22 +1,22 @@
 import streamlit as st
 
 def main():
-    st.markdown("# :orange[C]- :green[$CORE]")
-
-    # Increase text size using HTML and CSS
     st.markdown(
         """
         <style>
         .big-text {
             font-size: 24px;
+            color: orange;
+            background-color: green;
+            padding: 5px;
         }
         </style>
         """,
         unsafe_allow_html=True
     )
     
-    # Apply the CSS class to text you want to make bigger
-    st.sidebar.markdown("<p class='big-text'># :orange[C]- :green[$CORE]</p>", unsafe_allow_html=True)
+    # Apply the CSS class to text and specify the text content
+    st.sidebar.markdown("<p class='big-text'>C - $CORE</p>", unsafe_allow_html=True)
 
     
     #st.sidebar.title(":orange[C]- :green[$CORE]")
