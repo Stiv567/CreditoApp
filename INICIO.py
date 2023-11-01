@@ -25,7 +25,7 @@ def main():
     )
     
     # Apply the CSS classes to the text content
-    st.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
+    st.sidebar.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
 
     
     st.markdown("# :orange[C]- :green[$CORE]")
