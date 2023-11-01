@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.markdown("# Reporte técnico: Modelo de riesgo de crédito")
-st.sidebar.markdown("# ACERCA DEL MODELO: REPORTE TECNICO")
+st.sidebar.markdown("# :orange[C]- :green[$CORE]")
 
 st.header('Definición del problema')
 multi = '''La base de datos Credit Risk Dataset (Tse, n.d.) muestra un caso donde se simula la
