@@ -57,7 +57,7 @@ La base de datos utiliza las variables descritas anteriormente. Para el análisi
 De igual manera, se trabaja en un scorecard, el cual será utilizado para mostrar el modelo propuesto, mediante una página web usando la plataforma StreamLit. 
 El puntaje crediticio se calcula con una escala que esta entre 300 y 850.'''
 
-st.markdown(multi_7)
+st.markdown(multi_3)
         
 
 st.markdown(
