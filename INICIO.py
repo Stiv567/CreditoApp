@@ -1,7 +1,6 @@
 import streamlit as st
 
 def main():
-    # Increase text size and apply attributes using HTML and CSS
     st.markdown(
         """
         <style>
@@ -24,13 +23,10 @@ def main():
         unsafe_allow_html=True
     )
     
-    # Apply the CSS classes to the text content
-    st.sidebar.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
-
+    # Apply the CSS classes to the combined text
+    st.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
     
     st.markdown("# :orange[C]- :green[$CORE]")
-
-
     
     #st.sidebar.title(":orange[C]- :green[$CORE]")
     with st.container():
