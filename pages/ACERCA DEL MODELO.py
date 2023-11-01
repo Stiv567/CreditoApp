@@ -50,64 +50,12 @@ no en la misma magnitud que en el caso de la duración del empleo.
 
 st.markdown(multi_2)
 
-st.header('Análisis descriptivo e hipótesis')
+st.header('Metodología')
 
-multi_3 = '''En primer lugar, se debe realizar una limpieza de datos atípicos, o lo que se le llamará un
-pre-procesamiento de los datos, el cual seguirá los siguientes pasos:
-
-1. Se eliminan los valores faltantes de la variable person_emp_length, correspondiente a
-la duración de empleo de la persona, es decir, aquellos registros cuyo valor sea nulo.
-Esto, a primera vista, no es viable, puesto que, al realizarlo, siguen existiendo 3048
-datos nulos para esta columna. Por lo tanto, se debe revisar la significancia de la
-variable en el modelo propuesto.
-'''
-
-st.markdown(multi_3)
-
-image_1 = Image.open('imag1.PNG')
-st.image(image_1, caption='Figura 1')
-
-multi_4 = '''La existencia de estos datos nulos indica que no es viable eliminar los registros, ya
-que representan casi el 10% de los datos. Por ende, se debe remuestrear o imputar
-estos valores.
-
-En principio, se observa la viabilidad de realizar esta imputación de los datos por
-medio de un modelo KNN, pero esto no llegaría a ser muy viable en el modelo debido
-a la precisión que podría tener en el contexto.
-
-2. Se revisa ahora la variable loan_int_rate, correspondiente al interés asociado,
-buscando eliminar también valores nulos.
-
-'''
-st.markdown(multi_4)
-image_2 = Image.open('imag2.PNG')
-st.image(image_2, caption='Figura 2')
-
-st.markdown("De acuerdo con ello, se construye un histograma de los datos:")
-
-image_3 = Image.open('imag3.PNG')
-st.image(image_3, caption='Figura 3')
-
-multi_5 = '''Y, antes de proseguir, se realiza una eliminación de datos atípicos según el contexto,
-como es la edad de las personas cuando es mayor a 100 años, y los datos donde las
-personas tengan una edad mayor al tiempo que han sido empleadas.'''
-
-st.markdown(multi_5)
-
-image_4 = Image.open('imag4.PNG')
-st.image(image_4, caption='Figura 4')
-
-multi_6 = '''Se presenta un gráfico de correlaciones, el cual se presenta con valores entre -1 y 1,
-donde 0 indicará correlación nula, 1 indica una correlación directa positiva y -1 indica
-una correlación directa negativa.'''
-
-st.markdown(multi_6)
-image_5 = Image.open('imag5.PNG')
-st.image(image_5, caption='Figura 5')
-
-multi_7 = '''Se observa que las variables con mayor correlación parecen ser la edad de la persona
-y la duración de historial crediticio. Las otras variables parecieran no estar altamente
-relacionadas, así exista un grado de correlación.'''
+multi_3 = '''Para el desarrollo del análisis, se utilizan los datos suministrados por Tse (n.d.), de la plataforma de ciencia de datos, Kaggle. 
+La base de datos utiliza las variables descritas anteriormente. Para el análisis y manejo de los datos, se utiliza Python como lenguaje de programación que permite desarrollar lo propuesto.
+De igual manera, se trabaja en un scorecard, el cual será utilizado para mostrar el modelo propuesto, mediante una página web usando la plataforma StreamLit. 
+El puntaje crediticio se calcula con una escala que esta entre 300 y 850.'''
 
 st.markdown(multi_7)
         
