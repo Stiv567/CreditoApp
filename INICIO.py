@@ -1,31 +1,6 @@
 import streamlit as st
 
 def main():
-    st.markdown(
-        """
-        <style>
-        .formatted-text {
-            font-size: 24px;
-            color: orange;
-        }
-        .dash {
-            font-size: 24px;
-            color: white;
-            font-weight: bold;
-        }
-        .core {
-            font-size: 24px;
-            color: green;
-            font-weight: bold;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-    
-    # Apply the CSS classes to the combined text
-    st.markdown("<p class='formatted-text'>C</p><p class='dash'> - </p><p class='core'>$CORE</p>", unsafe_allow_html=True)
-    
     st.markdown("# :orange[C]- :green[$CORE]")
     
     #st.sidebar.title(":orange[C]- :green[$CORE]")
