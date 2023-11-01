@@ -103,13 +103,7 @@ y la duración de historial crediticio. Las otras variables parecieran no estar 
 relacionadas, así exista un grado de correlación.'''
 
 st.markdown(multi_7)
-
-# Ruta al archivo PDF que se va a descargar
-archivo_pdf = "FDA_T1_ReporteTécnico_CreditRisk.pdf"
-def descargar_pdf():
-    with open(archivo_pdf, "rb") as file:
-        pdf_data = file.read()
-        st.download_button("Descargar PDF", data=pdf_data, file_name="practicainforme.pdf", mime="application/pdf")
+        
 
 st.markdown(
             """
@@ -122,8 +116,8 @@ st.markdown(
             unsafe_allow_html=True
             )
 
-st.caption('Si deseas ver el informe completo puedes descargarlo en: :red[Descargar PDF]')
-descargar_pdf()
+st.caption('Para ver el reporte técnico completo en Deepnote haz clic en red[Reporte técnico]')
+st.link_button("Reporte técnico", data=pdf_data, file_name="practicainforme.pdf", mime="application/pdf")
 
 st.markdown('<div class="custom-space"></div>', unsafe_allow_html=True)
 
