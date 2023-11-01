@@ -30,7 +30,7 @@ El score crediticio que se quiere generar se hará a partir únicamente de varia
 Es decir, la edad, los ingresos, la cantidad de años desde que inicio con su historial crediticio, entre otros.
 
 Como se desea conocer cual es la probabilidad de que la persona que ingresa sus datos incumpla con algún crédito que se le otorgue 
-se define como variable objetivo el estado del préstamo la cual aparece en naranja. En negrita están todas aquellas variables que NO se consideran en este problema.'''
+se define como variable objetivo el estado del préstamo la cual aparece en naranja. En azul están todas aquellas variables que se consideran en este problema.'''
 
 st.markdown(multi)
 
