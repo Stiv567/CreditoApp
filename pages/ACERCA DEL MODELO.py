@@ -152,14 +152,5 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# Contenido del footer
-footer_content = """
-<div class="footer">
-    Puedes ver el informe completo aquí: | 
-    <a href="https://deepnote.com/publish/Score-Crediticio-Grupo-7-c3e73745-4797-4eab-9e9e-84b64802ff8e" target="_blank">red[Reporte tecnico en Deepnote]</a> 
-</div>
-"""
 
-# Mostrar el contenido del footer
-st.markdown(footer_content, unsafe_allow_html=True)
 
